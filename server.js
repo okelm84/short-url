@@ -4,7 +4,7 @@ var validUrl = require('valid-url');
 var url = require('url');
 var app = express();
 var MongoClient = mongodb.MongoClient;
-var urldb = 'mongodb://shorturlus:fcc11@ds145299.mlab.com:45299/shorturlsapp';
+var urldb = process.env.MONGOLAB_URI;
 app.set('port', (process.env.PORT || 8080))
 app.use('/',express.static('info'));
 
