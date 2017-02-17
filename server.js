@@ -16,7 +16,7 @@ app.get('/new/*',function(req,res){
             if (err) {
                 console.log('Unable to connect to the mongoDB server. Error:', err);
             } else {
-                console.log('Connection established to', urldb);
+                console.log('Connection established to db');
                 var newindex = 0;
                 db.collection('shorturls').count(null, function(err2,count2){if (err2) throw err2; newindex=count2+1;});
                 db.collection('shorturls').count({orginal_url : newurlSlice},function(err,count){if (err) throw err; 

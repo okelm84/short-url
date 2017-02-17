@@ -9,6 +9,7 @@
   "author": "Damian Tomaszewski",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.14.1",
     "mongodb": "^2.2.24",
     "valid-url": "^1.0.9"
